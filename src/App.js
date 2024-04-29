@@ -61,32 +61,6 @@ function App() {
 
     let res = await contract.methods.transfer(to, amount).call();
 
-    // contract.methods
-    //   .approve(to, amount)
-    //   .send({ from: connectedAccount })
-    //   .on("transactionHash", function (hash) {
-    //     console.log("Approval transaction hash:", hash);
-    //   })
-    //   .on("receipt", function (receipt) {
-    //     console.log("Approval receipt:", receipt);
-    //     // Once approval succeeds, execute the transfer
-    //     contract.methods
-    //       .transfer(to, amount)
-    //       .send({ from: connectedAccount })
-    //       .on("transactionHash", function (hash) {
-    //         console.log("Transfer transaction hash:", hash);
-    //       })
-    //       .on("receipt", function (receipt) {
-    //         console.log("Transfer receipt:", receipt);
-    //         // Transfer successful
-    //       })
-    //       .on("error", function (error, receipt) {
-    //         console.error("Transfer failed:", error);
-    //       });
-    //   })
-    //   .on("error", function (error, receipt) {
-    //     console.error("Approval failed:", error);
-    //   });
   }
 
   return (
